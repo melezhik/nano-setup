@@ -20,6 +20,6 @@ if test -z $user; then
   
 else
 
-  su --shell `which bash` --login -c "cp /tmp/.nanorc ~/" $user && echo rc file updated for user $USER
+  su --shell `which bash` --login -c "cp /tmp/.nanorc ~/" $user && echo rc file updated for user $user
 
 fi
