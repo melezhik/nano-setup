@@ -16,7 +16,7 @@ chmod a+r /tmp/.nanorc || exit 1
 
 if test -z $user; then
 
-  mv /tmp/.nanorc /root/ && echo rc file updated for user root
+  mv /tmp/.nanorc ~/ && echo rc file updated
   
 else
 

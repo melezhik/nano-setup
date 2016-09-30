@@ -1,13 +1,27 @@
 # SYNOPSIS
 
-Set up nano rc file
+A simple setup for nano rc file
+
+# INSTALL
+
+    $ sparrow plg install nano-setup 
 
 # USAGE
 
+## Manually
+
+    # use default settings , apply for current user    
+    $ sparrow plg run 
+
+
+    # override settings, apply for some user    
+    $ sparrow plg run --param tabsize=2 --param user=melezhik
+         
+
+## Sparrowdo usage
+    
     $ cat sparrowfile
 
-    use Sparrowdo;
-    
     use v6;
     
     use Sparrowdo;
