@@ -16,10 +16,10 @@ chmod a+r /tmp/.nanorc || exit 1
 
 if test -z $user; then
 
-  mv /tmp/.nanorc ~/ && echo rc file updated
+  mv -f /tmp/.nanorc ~/ && echo rc file updated
   
 else
 
-  su --shell `which bash` --login -c "cp /tmp/.nanorc ~/" $user && echo rc file updated for user $user
+  su --shell `which bash` --login -c "cp -f /tmp/.nanorc ~/" $user && echo rc file updated for user $user
 
 fi
