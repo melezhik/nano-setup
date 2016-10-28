@@ -1,10 +1,12 @@
 tabsize=$(config tabsize)
 user=$(config user)
+speller=$(config speller)
 
 if (( $tabsize > 0 )); then
   cat << EOF > /tmp/.nanorc && echo rc file generated from template
 set tabstospaces
 set tabsize $tabsize
+set speller "$speller"
 EOF
 else
   echo bad tabsize: $tabsize
